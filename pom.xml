@@ -1,21 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-  <modelVersion>4.0.0</modelVersion>
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.softserve.edu</groupId>
-  <artifactId>lv673</artifactId>
-  <version>1.0</version>
+	<groupId>com.softserve.edu</groupId>
+	<artifactId>lv673</artifactId>
+	<version>1.0</version>
 
-  <packaging>jar</packaging>
+	<packaging>jar</packaging>
 
-  <name>${project.artifactId}</name>
-  <url>http://maven.apache.org</url>
+	<name>${project.artifactId}</name>
+	<url>http://maven.apache.org</url>
 
 	<properties>
 		<application.password>My_Pass</application.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<org.slf4j.version>1.7.35</org.slf4j.version>
+		<org.slf4j.version>1.7.36</org.slf4j.version>
 	</properties>
 
 	<dependencies>
@@ -66,9 +67,9 @@
 
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
-    		<artifactId>webdrivermanager</artifactId>
-    		<version>5.1.0</version>
-		 	<!-- <version>4.4.3</version> -->
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.1.0</version>
+			<!-- <version>4.4.3</version> -->
 			<!-- <version>5.0.3</version> -->
 			<scope>test</scope>
 		</dependency>
@@ -81,14 +82,14 @@
 			<!-- <version>2.51.0</version> -->
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.codeborne</groupId>
 			<artifactId>phantomjsdriver</artifactId>
 			<!-- <version>1.4.4</version> -->
 			<version>1.5.0</version>
 		</dependency>
-		
+
 		<!-- - - - Logger - - - -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -96,14 +97,22 @@
 			<version>${org.slf4j.version}</version>
 			<scope>compile</scope>
 		</dependency>
-		
+
 		<dependency>
-			    <groupId>org.slf4j</groupId>
-			    <artifactId>slf4j-nop</artifactId>
-			    <version>${org.slf4j.version}</version>
-			    <scope>runtime</scope>
-			</dependency>
-			
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${org.slf4j.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.slf4j</groupId> -->
+		<!-- <artifactId>slf4j-nop</artifactId> -->
+		<!-- <version>${org.slf4j.version}</version> -->
+		<!-- <scope>runtime</scope> -->
+		<!-- </dependency> -->
+
 	</dependencies>
 
 	<build>
