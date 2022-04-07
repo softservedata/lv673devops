@@ -53,6 +53,7 @@ if __name__ == '__main__':
 ##################################################
 # Get
 #curl -i http://localhost:5000/api/tasks
+#curl -u miguel:python http://localhost:5000/api/tasks
 # Post
 #curl -i -X POST http://localhost:5000/api/tasks
 # Put
